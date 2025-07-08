@@ -18,6 +18,8 @@ include_directories(
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS "src/*.cpp")
 
-add_executable(opc-ua-project ${SOURCES})
+add_executable(my_opcua_server src/server.cpp)
+target_link_libraries(my_opcua_server PRIVATE open62541)
 
-target_link_libraries(opc-ua-project PRIVATE open62541)
+add_executable(my_opcua_client src/client.cpp)
+target_link_libraries(my_opcua_client PRIVATE open62541)

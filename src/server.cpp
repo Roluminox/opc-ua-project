@@ -22,7 +22,9 @@ int main()
         tempName, variableType, attr, NULL, NULL);
 
     volatile UA_Boolean running = UA_TRUE;
-    UA_Server_run(server, &running);
+    UA_StatusCode retval = UA_Server_run(server, &running);
+
     UA_Server_delete(server);
-    return 0;
+
+    return (int)retval;
 }
