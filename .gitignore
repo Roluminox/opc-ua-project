@@ -1,0 +1,46 @@
+# --- Build directories ---
+/build/
+/out/
+/bin/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/CMakeInstall.cmake
+/install_manifest.txt
+/Testing/
+CTestTestfile.cmake
+cmake_install.cmake
+
+# --- Visual Studio specific ---
+.vs/
+*.sln
+*.vcxproj*
+*.user
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# --- Compiled binaries ---
+*.obj
+*.o
+*.exe
+*.pdb
+*.lib
+*.dll
+*.so
+*.dylib
+
+# --- Logs and temp files ---
+*.log
+*.cache
+*.tmp
+*.swp
+*.dir
+
+# --- Other tools ---
+/compile_commands.json
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
