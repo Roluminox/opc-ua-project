@@ -1,3 +1,15 @@
+# /**
+#  * @file CMakeLists.txt
+#  * @brief CMake configuration for the opc-ua-project.
+#  *
+#  * This file configures the build system for the OPC UA project using CMake.
+#  * It sets the C++ standard, includes the open62541 library, and defines targets for the server and client executables.
+#  *
+#  * - Requires CMake version 3.16 or higher
+#  * - Uses C++20 standard
+#  * - Adds open62541 as a subdirectory
+#  * - Builds two executables: my_opcua_server and my_opcua_client
+#  */
 cmake_minimum_required(VERSION 3.16)
 
 project(opc-ua-project LANGUAGES CXX)
